@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaine Labs Table</title>
+    <link href="css/tailwind.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+<style>
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    @media (min-width: 835px) {
+        .marginit {
+            margin-left: 12px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 885px) {
+        .marginal {
+            margin-left: 15px;
+        }
+    }
+
+    tr p {
+        font-weight: 500;
+    }
+</style>
+<body class="px-4 sm:px-8 lg:px-20 py-9">
+    <header>
+        <img class="w-64 mx-auto mb-8" src="images/zaine-logo.png">
+    </header>
+
+    <main>
+        <table class="font-semibold w-full">
+            <thead>
+                <tr class="border border-black">
+                    <th>
+                        <div class="py-2 px-4">
+                            <p class="uppercase font-semibold mb-1 md:mb-0">The Reddington Multi-Specialist Hospital</p>
+                            <p class="font-normal mb-1 md:mb-0">12, Idowu Martins Street, Victoria Island Lagos, Telephone: 271 5354-4</p>
+                            <div class="flex flex-wrap md:flex-nowrap gap-1 sm:gap-4 md:gap-14 justify-center font-medium">
+                                <p class="text-base text-red-700">www.reddingtonhospital.com</p>
+                                <p class="text-base">lab_support@live.com</p>
+                                <p class="text-base">Lab Ext: 1048</p>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="before:table-row before:h-3">
+                <tr class="border border-black">
+                    <td>
+                        <div class="flex flex-col md:flex-row gap-4 xl:gap-14 py-3 px-5 md:px-8 w-full justify-start xl:justify-center flex-wrap xl:flex-nowrap">
+                            <div class="flex gap-2">
+                                <p>Patient Name: </p>
+                                <input class="border-b-2 focus:outline-none focus:border-black sm:min-w-[300px] px-1 grow" type="text">
+                            </div>
+                            <div class="flex gap-2 marginit lg:ml-10">
+                                <p>Hospital No: </p>
+                                <input class="border-b-2 focus:outline-none focus:border-black sm:min-w-[200px] px-1 grow" type="number">
+                            </div>
+                            <div class="flex gap-2 marginal">
+                                <p>Lab No: </p> 
+                                <input class="border-b-2 focus:outline-none focus:border-black sm:min-w-[200px] px-1 grow" type="number">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border border-black">
+                    <td>
+                        <div class="flex flex-col md:flex-row gap-4 xl:gap-14 py-3 px-5 md:px-8 w-full justify-start xl:justify-evenly flex-wrap xl:flex-nowrap">
+                            <div class="flex gap-2">
+                                <p>Requesting Doctor Name: </p>
+                                <input class="border-b-2 focus:outline-none focus:border-black sm:min-w-[300px] px-1 grow" type="text">
+                            </div>
+                            <div class="flex gap-2">
+                                <p>Location/Clinic: </p> 
+                                <input class="border-b-2 focus:outline-none focus:border-black sm:min-w-[200px] px-1 grow" type="number">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border border-black">
+                    <td>
+                        <div class="flex flex-col md:flex-row gap-4 xl:gap-14 py-3 px-5 md:px-8 w-full justify-start xl:justify-center flex-wrap xl:flex-nowrap">
+                            <div class="flex gap-2">
+                                <p>Sex: </p>
+                                <input class="border-b-2 focus:outline-none focus:border-black sm:min-w-[300px] px-1 grow" type="text">
+                            </div>
+                            <div class="flex gap-2 marginit lg:ml-10">
+                                <p>Date of Birth: </p>
+                                <input class="border-b-2 focus:outline-none focus:border-black sm:min-w-[200px] px-1 grow" type="number">
+                            </div>
+                            <div class="flex gap-2 marginal">
+                                <p>Specimen: </p> 
+                                <input class="border-b-2 focus:outline-none focus:border-black sm:min-w-[200px] px-1 grow" type="number">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border border-black">
+                    <td>
+                        <div class="flex flex-col md:flex-row gap-4 xl:gap-14 py-3 px-5 md:px-8 w-full justify-start xl:justify-center flex-wrap xl:flex-nowrap">
+                            <div class="flex gap-2">
+                                <p>Date Collected: </p>
+                                <input class="border-b-2 focus:outline-none focus:border-black sm:min-w-[300px] px-1 grow" type="text">
+                            </div>
+                            <div class="flex gap-2 marginit lg:ml-10">
+                                <p>Date Received: </p>
+                                <input class="border-b-2 focus:outline-none focus:border-black sm:min-w-[200px] px-1 grow" type="number">
+                            </div>
+                            <div class="flex gap-2 marginal">
+                                <p>Date Reported: </p> 
+                                <input class="border-b-2 focus:outline-none focus:border-black sm:min-w-[200px] px-1 grow" type="number">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border border-black">
+                    <td>
+                        <div class="flex flex-col md:flex-row gap-4 xl:gap-14 py-3 px-5 md:px-8 w-full justify-start xl:justify-center flex-wrap xl:flex-nowrap">
+                            <div class="flex gap-2">
+                                <p>Clinical Data: </p>
+                                <input class="border-b-2 focus:outline-none focus:border-black sm:min-w-[300px] px-1 grow" type="text">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border border-black">
+                    <td>
+                        <div class="flex flex-col md:flex-row gap-4 xl:gap-14 py-3 px-5 md:px-8 w-full justify-center flex-wrap xl:flex-nowrap">
+                            <h5 class="text-red-600 font-bold text-xl text-center">SARS-COV-2 RESULT</h5>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="w-full text-base">
+            <thead>
+                <tr>
+                    <th class="border border-t-0 border-black w-2/4">
+                        <div class="py-2 px-4">
+                            <p class="uppercase font-bold">Test</p>
+                        </div>
+                    </th>
+                    <th class="border border-t-0 border-black">
+                        <div class="py-2 px-4 flex">
+                            <p class="uppercase font-bold hidden sm:table-cell">Result</p>
+                            <p class="uppercase text-left font-bold table-cell sm:hidden">ARS COV-2 Lateral Flow Test (Antigen) SD BIOSENSOR (ABBOTT)</p>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-t-0 border-black w-2/4">
+                        <div class="py-2 px-4 flex justify-center sm:justify-start">
+                            <p class="uppercase font-bold table-cell sm:hidden">Result</p>
+                            <p class="uppercase font-bold hidden sm:table-cell">ARS COV-2 Lateral Flow Test (Antigen) SD BIOSENSOR (ABBOTT)</p>
+                        </div>
+                    </td>
+                    <td class="border border-t-0 border-black w-2/4">
+                        <div class="py-2 px-4">
+                            
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="border border-t-0 border-black">
+                        <div class="py-3 px-4 min-h-[70px]">
+                            <p>Comments: </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="border border-t-0 border-black">
+                        <div class="py-3 px-4">
+                            <p class="font-semibold">Results Validated by Medical Laboratory Scientific Officer </p>
+                            <div class="flex flex-col gap-3 md:gap-0 md:flex-row justify-between mt-5">
+                                <p class="font-bold">Date: </p>
+                                <p class="font-bold">Time: </p>
+                                <p class="font-bold md:mr-40 lg:mr-52">Signature: </p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
